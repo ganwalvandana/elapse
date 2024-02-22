@@ -1,0 +1,527 @@
+
+@font-face {
+    font-family: 'new';
+    src: url(images/font3);
+}
+
+body{
+    background-color: #000;
+    font-family: new;
+    word-spacing: 5px;
+    /* width: 100%; */
+}
+h1{
+    font-size: 55px;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+}
+
+h2{
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+p{
+    font-size: 18px;
+}
+
+hr{
+    mix-blend-mode: difference;
+    opacity: 0.1;
+}
+
+#header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+
+.logo{
+    float: left;
+    margin-left: 300px;
+    /* padding-top: 10px; */
+    /* height: 10px; */
+    mix-blend-mode: difference;
+}
+
+
+/************button******************/
+
+.navbtn{
+    float: right;
+    margin-right: 300px;
+}
+.sec1Btn{
+    /* float: left; */
+    margin: 30px;
+    display: inline-block;
+    /* margin-left: 300px; */
+}
+.joinBtn{
+    /* float: right;
+    margin-right: 300px; */
+    position: relative;
+    overflow: hidden;
+    /* border: transparent; */
+    /* z-index: -1; */
+    /* offset: auto; */
+
+}
+.joinBtn::before{
+    content: '';
+    background: conic-gradient(transparent 270deg, white, transparent);
+    position: absolute;
+    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1;
+    width: 100%;
+    animation: rotate 3s linear infinite;
+}
+
+.joinBtn::after{
+    content: '';
+    background: inherit;
+    border-radius: inherit;
+    position: absolute;
+    /* inset: var(--offset); */
+    /* height: calc(100% - 2 * var(offset));
+    height: calc(100% - 2 * var(offset)); */
+}
+
+
+.joinWaitlist{
+    padding: 16px 40px;
+    font-size: 20px;
+    /* inset: 0; */
+    z-index: 1;
+    /* position: absolute; */
+    background: transparent;
+    border-radius: 27px;
+    color: white;
+    /* overflow: hidden; */
+}
+
+@keyframes rotate{
+    from{
+        transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+    }
+    to{
+        transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+    }
+}
+
+/***************** section ****************/
+
+
+#section1{
+    display: flex;
+    flex: 1 ;
+    padding: 200px 300px;
+    color: white;
+    mix-blend-mode: difference;
+    background-image: radial-gradient( rgb(18, 18, 149) 5%, black 50%);
+
+}
+#section2{
+    display: flex;
+    flex: 1 ;
+    padding: 200px 300px;
+    /* position: relative; */
+    color: white;
+    mix-blend-mode: difference;
+    /* background-image: radical-gradient( blue 10%,black 90%); */
+
+}
+
+#section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 200px;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+#section4{
+    display: flex;
+    flex-direction: column;
+    flex: 1 ;
+    padding: 200px 600px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    mix-blend-mode: difference;
+    background-image: linear-gradient(black ,rgba(0,0,240, 0.394));
+}
+#section5a{
+    background-image: linear-gradient(rgba(0, 0, 240, 0.394),black);
+}
+
+
+#section5a, #section5d, #section5c, #section5e, #section5b{
+    display: flex;
+    /* flex: 1 ; */
+    padding: 200px 200px;
+    color: white;
+    mix-blend-mode: difference;
+}
+#section6{
+    display: flex;
+    flex-direction: column;
+    flex: 1 ;
+    padding: 200px 600px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    mix-blend-mode: difference;
+}
+#section6{
+    background-image: linear-gradient(black,rgba(0, 0, 240, 0.394));
+}
+
+.sec1logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.integration{
+    padding: 10px;
+    border-radius: 10%;
+    background-color: rgba(240, 248, 255, 0.163);
+
+}
+.wLogo{
+    padding: 10px;
+    border-radius: 10%;
+    margin: 0px 30px;
+    background-color: rgba(240, 248, 255, 0.163);
+
+}
+.integration-logo{
+    height: 30px;
+    width: 30px;
+    /* margin-right: 10px; */
+    
+    /* margin-right: 40px; */
+    /* background-color: rgba(240, 248, 255, 0.163); */
+
+}
+.w-logo{
+    height: 30px;
+    width: 30px;
+}
+
+.trusted{
+    padding-top: 12px;
+    margin-top: -20px;
+    /* align-items: center; */
+    /* margin-left: -30px; */
+}
+
+.sec2img{  
+    /* background-color: aqua;  */
+    border-radius: 50%;
+    background-image: radial-gradient(circle,rgb(11, 85, 246),#000 100%);    
+    margin-right: 300px;
+    /* z-index: 1; */
+    /* mix-blend-mode: normal; */
+    filter: contrast(200%)hue-rotate(344deg);
+    animation:effect 2s linear infinite;
+
+
+}
+@keyframes effect { 
+    0% { 
+        background: radial-gradient(#2004f5, #f3f6f3); 
+    } 
+
+    50% { 
+        background: radial-gradient(#220080, #392b71); 
+    } 
+
+    100% { 
+        background: radial-gradient( #080808, #fdfdff); 
+    } 
+} 
+
+.sec2info{
+    float: right;
+}
+
+.chatbot{
+    height: 200px;
+    align-items: center;
+    padding: 100px;
+    display: block;
+    /* z-index: 3; */
+
+    /* position: absolute; */
+}
+
+.sec3info{
+    text-align: center;
+    padding: 100px 300px;
+}
+
+.brain{
+    height: 500px;
+    width: 500px;
+    border: none;
+    overflow:hidden;
+    align-items: center;
+    background: transparent;
+    /* padding-bottom: -300px; */
+    /* margin-left: 300px; */
+    
+}
+
+.sec5heading{
+    padding-right: 400px;
+}
+.sec5info{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    padding-left: 300x;
+}
+
+.sec5image{
+    padding-top: 50px;
+}
+
+.sec5img{
+    height: 400px;
+    width: 390px;
+    padding: 100px;
+    /* overflow: hidden; */
+}
+
+
+
+
+/************ footer **************/
+
+#footer{
+    width: 100%;
+    display: flex;
+    /* position: fixed; */
+    bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+#footer{
+    background-image: linear-gradient(rgba(0, 0, 240, 0.394), black);
+}
+
+.footerIcon{
+    display: flex;
+    /* padding: 10px 50px; */
+    margin-right: 300px;
+    font-size: 30px;
+    
+}
+
+#twitter{
+    border-radius: 10%;
+    background-color: rgba(240, 248, 255, 0.163);
+    margin-right: 10px;
+    padding: 10px 10px;
+    /* height: 200px; */
+}
+
+#linkedin{
+    border-radius: 10%;
+
+    float: right;
+    padding: 10px 10px;
+    background-color: rgba(240, 248, 255, 0.163);
+
+}
+.bi{
+    color: white;
+    padding: 0px;
+}
+
+
+@media screen and (max-width:1500px) and (min-width:800px) {
+    body{
+        word-spacing: 2px; 
+    }
+    h1{
+        font-size: 50px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+    }
+    h2{
+        font-size: 45px;
+        letter-spacing: 1px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+    .logo,.navbtn{
+        margin:0px 100px;
+    }
+    .sec1Btn{
+        margin: 10px;
+    }
+    .joinWaitlist{
+        padding: 14px 30px;
+        font-size: 20px;
+    }
+    #section1, #section2, #section3, 
+    #section4,#section6{
+        padding: 150px 100px;
+    }
+    #section5a, #section5b,
+    #section5c, #section5d, #section5e{
+        padding: 150px 100px;
+        /* flex-direction: column; */
+
+    }
+    .integration, .wLogo{
+        padding: 8px;
+        margin: 0px 5px;
+    }
+    .integration-logo, .w-logo{
+        height: 24px;
+        width: 24px;
+    }
+    .trusted{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .sec2img{
+        margin-right: 100px;
+    }
+    .chatbot{
+        height: 90px;
+        padding: 80px;
+    }
+    .sec3info{
+        padding: 100px 100px;
+    }
+    .brain{
+        height: 450px;
+        width: 450px;
+    }
+    .sec5heading{
+        padding-right: 100px;
+        width: 100%;
+    }
+    .sec5info{
+        width: 100%;
+    }
+    .sec5image{
+        padding-top: 30px;
+    }
+    .sec5img{
+        height: 50%;
+        width: 70%;
+        padding: 60px;
+    }
+    .footerIcon{
+        margin: 0px 60px;
+    }
+    #twitter, #linkedin{
+        margin-right: 5px;
+        padding: 5px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    body{
+        word-spacing: 2px; 
+    }
+    h1{
+        font-size: 40px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+    }
+    h2{
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+    .logo,.navbtn{
+        margin:0px 60px;
+    }
+    .sec1Btn{
+        margin: 5px;
+    }
+    .joinWaitlist{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    #section1, #section2, #section3, 
+    #section4,#section6{
+        padding: 100px 60px;
+    }
+    #section5a, #section5b,
+    #section5c, #section5d, #section5e{
+        padding: 100px 60px;
+        flex-direction: column;
+
+    }
+    .integration, .wLogo{
+        padding: 5px;
+        margin: 0px 5px;
+    }
+    .integration-logo, .w-logo{
+        height: 24px;
+        width: 24px;
+    }
+    .trusted{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .sec2img{
+        margin-right: 60px;
+    }
+    .chatbot{
+        height: 90px;
+        padding: 80px;
+    }
+    .sec3info{
+        padding: 100px 60px;
+    }
+    .brain{
+        height: 350px;
+        width: 350px;
+    }
+    .sec5heading{
+        padding-right: 100px;
+        width: 100%;
+    }
+    .sec5info{
+        width: 100%;
+    }
+    .sec5image{
+        padding-top: 30px;
+    }
+    .sec5img{
+        height: 50%;
+        width: 70%;
+        padding: 60px;
+    }
+    .footerIcon{
+        margin: 0px 60px;
+    }
+    #twitter, #linkedin{
+        margin-right: 5px;
+        padding: 5px;
+    }
+}
