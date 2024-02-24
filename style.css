@@ -52,6 +52,7 @@ hr{
 .navbtn{
     float: right;
     margin-right: 300px;
+    /* border: none; */
 }
 .sec1Btn{
     /* float: left; */
@@ -64,44 +65,71 @@ hr{
     margin-right: 300px; */
     position: relative;
     overflow: hidden;
+    border-radius: 27px;
+    /* inset: 0; */
+    /* border: 5px solid transparent; */
+    /* margin: auto; */
+    /* mix-blend-mode: difference; */
+    /* background: linear-gradient(black); */
     /* border: transparent; */
-    /* z-index: -1; */
+    /* z-index: 2; */
     /* offset: auto; */
 
 }
 .joinBtn::before{
     content: '';
-    background: conic-gradient(transparent 270deg, white, transparent);
+    background: conic-gradient(  white 20deg, transparent 100deg );
     position: absolute;
-    opacity: 0.5;
+    /* opacity: 0.9; */
     top: 50%;
     left: 50%;
+    /* right: 50%;
+    bottom: 50%; */
+    
+    
     z-index: -1;
     transform: translate(-50%, -50%);
     aspect-ratio: 1;
     width: 100%;
-    animation: rotate 3s linear infinite;
+    /* height: 100%; */
+
+    animation: rotate 4s linear infinite;
 }
 
 .joinBtn::after{
     content: '';
     background: inherit;
     border-radius: inherit;
+    z-index: -1;
     position: absolute;
+    /* inset: 0; */
+    /* opacity: 0.5; */
+    /* filter: blur(40%); */
     /* inset: var(--offset); */
-    /* height: calc(100% - 2 * var(offset));
-    height: calc(100% - 2 * var(offset)); */
+    /* height: calc(100% + 10px);
+    width: calc(100% + 10px); */
 }
+.spanbtn{
+    /* padding: 16px 40px; */
+    font-size: 20px;
+    z-index: 1;
+    /* background: transparent; */
+    /* overflow: hidden; */
+    /* mix-blend-mode: difference; */
+    /* color: white; */
 
+}
 
 .joinWaitlist{
     padding: 16px 40px;
     font-size: 20px;
     /* inset: 0; */
     z-index: 1;
-    /* position: absolute; */
-    background: transparent;
+    /* opacity: 0.2; */
     border-radius: 27px;
+    /* mix-blend-mode: normal; */
+
+    background: transparent;
     color: white;
     /* overflow: hidden; */
 }
@@ -115,7 +143,7 @@ hr{
     }
 }
 
-/***************** section ****************/
+/***************** sections ****************/
 
 
 #section1{
@@ -140,9 +168,10 @@ hr{
 
 #section3{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 200px 200px;
+    padding: 400px 200px;
     color: white;
     mix-blend-mode: difference;
 }
@@ -165,11 +194,12 @@ hr{
 
 #section5a, #section5d, #section5c, #section5e, #section5b{
     display: flex;
-    /* flex: 1 ; */
+    flex: 1 ;
     padding: 200px 200px;
     color: white;
     mix-blend-mode: difference;
 }
+
 #section6{
     display: flex;
     flex-direction: column;
@@ -183,6 +213,34 @@ hr{
 #section6{
     background-image: linear-gradient(black,rgba(0, 0, 240, 0.394));
 }
+
+/**************** section5 Line ************************/
+.centerLine{
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    /* color: white; */
+    /* background-color: antiquewhite; */
+    margin-right: 100px;
+}
+
+
+.circle {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    /* justify-items: center; */
+    /* margin-right: 100px; */
+    align-items: center;
+
+    padding: -100px 0px;
+
+    /* -webkit-text-stroke-color: #fff; */
+    /* background-color: transparent; */
+    border-radius: 100%;
+    position: sticky;
+    top: 50vh;
+}
+
 
 .sec1logo{
     display: flex;
@@ -266,8 +324,16 @@ hr{
 
 .sec3info{
     text-align: center;
-    padding: 100px 300px;
+    width: 100%;
+    font-size: 4em;
+    font-weight: 400;
+    line-height: 1.2;
+        /* background: radial-gradient(65% 100% at 50% 50%,#fff 30%,hsla(0,0%,100%,.4) 100%); */
+
+    /* padding: 100px 100px; */
 }
+
+
 
 .brain{
     height: 500px;
@@ -282,13 +348,14 @@ hr{
 }
 
 .sec5heading{
-    padding-right: 400px;
+    padding-right: 200px;
 }
 .sec5info{
     display: flex;
     flex-direction: column;
     width: 650px;
-    padding-left: 300x;
+
+    padding-left: 200px;
 }
 
 .sec5image{
@@ -349,6 +416,8 @@ hr{
     color: white;
     padding: 0px;
 }
+
+/************************ media ***********************/
 
 
 @media screen and (max-width:1500px) and (min-width:800px) {
