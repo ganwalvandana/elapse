@@ -80,6 +80,9 @@ hr {
   padding: 2px;
 }
 
+.joinBtn:hover{
+    cursor: pointer;
+}
 /* .joinBtn span { */
 /* position: absolute; */
 /* z-index: 1; */
@@ -192,6 +195,7 @@ hr {
     /* justify-items: center; */
     /* padding-left: 5px; */
     background-color: white;
+    /* overflow: hidden; */
     transform: rotate(180deg) ;
     position: absolute;
     align-self: center;
@@ -302,6 +306,11 @@ hr {
   /* background: radial-gradient(65% 100% at 50% 50%,#fff 30%,hsla(0,0%,100%,.4) 100%); */
 
   /* padding: 100px 100px; */
+}
+.sec3a:hover, .sec3b:hover, .sec3c:hover {
+    /* font-size: 60px; */
+    font-weight: bold;
+    color: rgb(10, 10, 195);
 }
 
 .brain {
